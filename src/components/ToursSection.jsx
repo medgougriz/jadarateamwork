@@ -1,6 +1,5 @@
-import React from 'react';
 import TourCard from './TourCard';
-import { tours } from '../data/data';
+import { tours } from '../data/ToursData';
 import './ToursSection.css';
 
 export default function ToursSection() {
