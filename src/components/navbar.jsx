@@ -22,7 +22,7 @@ export default function Navbar() {
 
       {/* Desktop Button */}
       <button className="md:inline hidden bg-white text-gray-600 border w-40 h-11 rounded-full">
-        Get started
+        Book Now
       </button>
 
       {/* Mobile Menu Button */}
