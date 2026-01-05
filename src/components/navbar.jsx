@@ -14,9 +14,9 @@ export default function Navbar() {
 
       {/* Desktop Menu */}
       <ul className="md:flex hidden items-center gap-10">
-        <li><a className="hover:text-gray-500 transition" href="#">Home</a></li>
-        <li><a className="hover:text-gray-500 transition" href="#">Services</a></li>
-        <li><a className="hover:text-gray-500 transition" href="#">Portfolio</a></li>
+        <li><a className="hover:text-gray-500 transition" href="/">Home</a></li>
+        <li><a className="hover:text-gray-500 transition" href="/service">Services</a></li>
+        <li><a className="hover:text-gray-500 transition" href="/quad">Quad</a></li>
         <li><a className="hover:text-gray-500 transition" href="#">Pricing</a></li>
       </ul>
 
