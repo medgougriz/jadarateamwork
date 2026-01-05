@@ -50,11 +50,7 @@
 .hero-form-wrapper .booking-form { background: #f6b93b; padding: 1.125rem; border-radius: 8px; box-shadow: 0 8px 24px rgba(0,0,0,0.15); width: 100%; }
 .hero-form-wrapper .form-group { flex: 1 1 0; }
 
-@media (max-width: 800px) {
-  .hero-title { font-size: 2rem; }
-  .hero-sub { font-size: 1rem; }
-  .hero-form-wrapper { width: calc(100% - 32px); bottom: -30px; }
-}
+/* removed responsive @media rules */
 /* Hero section and rotating background layers */
 .hero {
   position: relative;
@@ -182,8 +178,4 @@
 /* ensure inner controls don't overflow */
 .hero-form-wrapper .form-group { flex: 1 1 0; }
 
-@media (max-width: 800px) {
-  .hero-title { font-size: 2rem; }
-  .hero-sub { font-size: 1rem; }
-  .hero-form-wrapper { width: calc(100% - 32px); bottom: -30px; }
-}
+/* removed responsive @media rules */

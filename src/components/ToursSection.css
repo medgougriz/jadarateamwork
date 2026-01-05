@@ -1,0 +1,19 @@
+.tours-section {
+  padding: 40px 16px;
+  background: #f8fafc;
+}
+.tours-inner {
+  max-width: 1180px;
+  margin: 0 auto;
+}
+.tours-title {
+  font-size: 1.5rem;
+  margin: 0 0 18px 0;
+  font-weight: 800;
+}
+.tours-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+}
+
