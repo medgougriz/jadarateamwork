@@ -1,0 +1,83 @@
+/* Booking form styles (matches classes used in bookingForm.jsx) */
+.booking-form {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    align-items: center;
+    background: #ffffff;
+    padding: 0.75rem;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+}
+
+.form-group {
+    display: flex;
+    flex: 1 1 200px;
+    min-width: 140px;
+}
+
+.form-input {
+    width: 100%;
+    padding: 0.5rem 0.75rem;
+    border: 1px solid #e5e7eb;
+    border-radius: 6px;
+    font-size: 0.95rem;
+    background: #fff;
+}
+
+.guests-input {
+    max-width: 110px;
+}
+
+.search-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: #111827;
+    color: #fff;
+    border: none;
+    padding: 0.6rem 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.search-button:hover {
+    background: #0b1220;
+}
+
+.search-icon {
+    width: 1rem;
+    height: 1rem;
+}
+
+@media (max-width: 600px) {
+    .booking-form {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .search-button {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+/* legacy button helpers (kept for reuse) */
+.button-bg {
+    padding: 2px;
+    border-radius: 9999px;
+    transition: transform 0.3s ease;
+}
+.button-bg:hover { transform: scale(1.05); }
+.button-bg:active { transform: scale(0.98); }
+.book-button {
+    background-color: white;
+    color: black;
+    font-weight: 500;
+    font-size: 0.875rem;
+    padding: 0.625rem 2rem;
+    border-radius: 9999px;
+    border: 2px solid black;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.book-button:hover { background-color: #ffebd2ff; }

@@ -1,0 +1,57 @@
+/* Clean Hero styles with rotating background layers */
+.hero {
+  position: relative;
+  min-height: 62vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem 1rem 3rem;
+  color: #fff;
+  flex-direction: column;
+}
+
+.bg-layer {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.bg-layer.active { opacity: 1; }
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(0,0,0,0.45) 0%, rgba(0,0,0,0.35) 60%, rgba(0,0,0,0.15) 100%);
+  z-index: 1;
+}
+
+.hero-inner { position: relative; z-index: 2; text-align: center; max-width: 1100px; margin: 0 auto; }
+.hero-title { font-size: 3rem; margin: 0 0 1rem 0; font-weight: 800; }
+.hero-sub { font-size: 1.125rem; margin: 0 auto; max-width: 900px; opacity: 0.95; }
+
+.hero-form-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 1100px;
+  z-index: 3;
+  padding: 0 1rem;
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.hero-form-wrapper .booking-form { background: #f6b93b; padding: 1.125rem; border-radius: 8px; box-shadow: 0 8px 24px rgba(0,0,0,0.15); width: 100%; }
+.hero-form-wrapper .form-group { flex: 1 1 0; }
+
+@media (max-width: 800px) {
+  .hero-title { font-size: 2rem; }
+  .hero-sub { font-size: 1rem; }
+  .hero-form-wrapper { width: calc(100% - 32px); bottom: -30px; }
+}

@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Btn from "./Btn";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -21,9 +22,7 @@ export default function Navbar() {
       </ul>
 
       {/* Desktop Button */}
-      <button className="md:inline hidden bg-white text-gray-600 border w-40 h-11 rounded-full">
-        Book Now
-      </button>
+      <Btn className="md:inline hidden bg-white text-gray-600 border w-40 h-11 rounded-full" />
 
       {/* Mobile Menu Button */}
       <button
@@ -43,10 +42,7 @@ export default function Navbar() {
             <li><a href="#">Portfolio</a></li>
             <li><a href="#">Pricing</a></li>
           </ul>
-
-          <button className="mt-6 bg-white border w-40 h-11 rounded-full">
-            Get started
-          </button>
+            <Btn />
         </div>
       )}
     </nav>
