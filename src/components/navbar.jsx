@@ -7,8 +7,9 @@ export default function Navbar() {
     <nav className="h-[70px] relative w-full px-6 md:px-16 lg:px-24 xl:px-32 flex items-center justify-between z-20 bg-white text-gray-700 shadow-[0px_4px_25px_0px_#0000000D]">
 
       {/* Logo */}
-      <a href="#" className="text-indigo-600">
-        LOGO
+      <a href="#" className="text-orange-600">
+        <img className="w-13 md:w-13" src="https://agadiractivities.com/wp-content/uploads/2022/02/tinywow_remove_bg_880681-e1645315319282.png" alt="logo" />
+        {/* LOGO */}
       </a>
 
       {/* Desktop Menu */}
