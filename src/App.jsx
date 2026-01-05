@@ -8,7 +8,7 @@ import "./style.css";
 function App() {
   return (
     <>
-      <Routes>
+    <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/quad" element={<Quad />} />
     </Routes>

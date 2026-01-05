@@ -7,7 +7,6 @@ export default function Home() {
   return (
     <>
       <Navbar />
-      <h1 className="text-3xl font-bold underline text-center">Baker kaygol likom salam <br /> mr7ba bikom flmghrib</h1>
       <Hero />
       <ToursSection />
       <Footer />
