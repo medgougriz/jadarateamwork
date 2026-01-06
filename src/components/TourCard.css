@@ -1,5 +1,7 @@
+/* Base (Mobile-first) */
 .tour-card {
-  width: 320px;
+  width: 100%;
+  max-width: 360px;              /* prevents overstretching */
   background: #fff;
   border-radius: 10px;
   overflow: hidden;
@@ -8,52 +10,88 @@
   font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
 }
 
+/* Responsive image */
 .tour-image {
-  height: 180px;
+  height: 160px;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
 .tour-body {
-  padding: 14px 16px 18px 16px;
+  padding: 14px 16px 18px;
 }
 
 .tour-title {
-  font-size: 1.05rem;
+  font-size: 1rem;
   font-weight: 700;
-  margin: 0 0 8px 0;
-  line-height: 1.2;
+  margin: 0 0 8px;
+  line-height: 1.25;
 }
 
 .tour-sub {
-  margin: 0 0 12px 0;
+  margin: 0 0 12px;
   color: #6b7280;
-  font-size: 0.95rem;
+  font-size: 0.9rem;
 }
 
 .tour-footer {
   display: flex;
+  flex-wrap: wrap;               /* allows wrapping on small screens */
   align-items: center;
   justify-content: space-between;
-  gap: 12px;
+  gap: 10px;
 }
 
-.tour-price { font-size: 0.95rem; color: #111; }
-.tour-price .currency { margin: 0 6px 0 6px; color: #111; }
-.tour-price .amount { color: #e11d48; font-weight: 800; margin-right: 6px; }
-.tour-price .per { color: #6b7280; font-size: 0.85rem; margin-left: 6px; }
+.tour-price {
+  font-size: 0.9rem;
+  color: #111;
+}
 
+.tour-price .currency { margin: 0 6px; }
+.tour-price .amount {
+  color: #e11d48;
+  font-weight: 800;
+}
+.tour-price .per {
+  color: #6b7280;
+  font-size: 0.85rem;
+}
+
+/* Button optimized for touch */
 .book-btn {
-  background: #f6b93b; /* yellow */
+  background: #f6b93b;
   color: #111;
   border: none;
-  padding: 10px 14px;
+  padding: 12px 16px;
   border-radius: 6px;
   font-weight: 800;
   cursor: pointer;
   box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  width: 100%;                   /* full-width on mobile */
 }
 
-.book-btn:hover { filter: brightness(0.95); }
+.book-btn:hover {
+  filter: brightness(0.95);
+}
 
+.tour-grid {
+  display: grid;
+  grid-template-columns: 1fr; /* ✅ ONE card per row on mobile */
+  gap: 20px;
+  padding: 16px;
+}
+
+/* Tablets */
+@media (min-width: 640px) {
+  .tour-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Desktops */
+@media (min-width: 1024px) {
+  .tour-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
