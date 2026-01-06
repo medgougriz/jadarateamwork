@@ -19,5 +19,12 @@ export const tours = [
     sub: "2 Days · Meals included",
     price: "120",
     currency: "€"
+  },
+  {
+    image: "https://agadiractivities.com/wp-content/uploads/2022/02/Marko-and-mikkel-in-dubai_Desert.jpg",
+    title: "Half-day Sand Boarding Experience with Lunch",
+    sub: "2 Hours · Meals included",
+    price: "40",
+    currency: "€",
   }
 ];
