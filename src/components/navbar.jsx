@@ -18,7 +18,7 @@ export default function Navbar() {
         <li><a className="hover:text-gray-500 transition" href="/">Home</a></li>
         <li><a className="hover:text-gray-500 transition" href="/service">Services</a></li>
         <li><a className="hover:text-gray-500 transition" href="/quad">Quad</a></li>
-        <li><a className="hover:text-gray-500 transition" href="#">Pricing</a></li>
+        <li><a className="hover:text-gray-500 transition" href="/contact">Contact</a></li>
       </ul>
 
       {/* Desktop Button */}
