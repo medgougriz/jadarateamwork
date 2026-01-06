@@ -2,6 +2,7 @@ import './HeroFixed.css';
 import BookingForm from './bookingForm';
 import { useEffect, useState } from 'react';
 
+
 const images = [
   'https://imgs.search.brave.com/EM0_BWdjNis1g_7gqoCfExAkWhIeIqIG99IRhsxcqmk/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pLm5h/dGdlb2ZlLmNvbS9u/LzdlZGMwNTgxLTZl/OGEtNGJlOS05NjI4/LTViNDY4YThhZTQ0/MC95b3Vyc2hvdC1t/b3JvY2NvMDE4Lmpw/Zw',
   'https://imgs.search.brave.com/Zxl3EgJWwI4IB8qR8qBMlcLkgoAQS5tRLyYyvxQXphM/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvMTI1/MDQyODU4OS9waG90/by9tb3JvY2NvLWNp/dHkuanBnP3M9NjEy/eDYxMiZ3PTAmaz0y/MCZjPWR0eDdvVE1L/Tms5b2RNbWV2U1B6/ZGhKNjg0bEtmN3pC/dkpCQU9tdXZTRVU9',
