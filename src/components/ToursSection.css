@@ -13,7 +13,22 @@
 }
 .tours-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: 1fr; /* 1 card on mobile */
   gap: 18px;
+  justify-items: center;
+}
+
+/* Tablets */
+@media (min-width: 640px) {
+  .tours-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Desktops */
+@media (min-width: 1024px) {
+  .tours-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
 
