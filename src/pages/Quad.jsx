@@ -1,11 +1,12 @@
 import Navbar from "../components/navbar.jsx";
 import Footer from "../components/footer.jsx";
+import Activity1 from "../components/Activity-one";
 
 export default function Home() {
   return (
     <>
       <Navbar />
-      <h1 className="text-3xl font-bold underline text-center">Baker kaygol likom ajiw rkbo l quad 3ndna</h1>
+      <Activity1 />
       <Footer />
     </>
   );
