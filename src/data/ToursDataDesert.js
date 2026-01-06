@@ -25,6 +25,6 @@ export const tours = [
     title: "Half-day Sand Boarding Experience with Lunch",
     sub: "2 Hours · Meals included",
     price: "40",
-    currency: "€",
+    currency: "€", 
   }
 ];
