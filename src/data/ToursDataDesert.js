@@ -11,7 +11,8 @@ export const tours = [
     title: "Quad Biking Experience",
     sub: "3 Hours · Pickup available",
     price: "40",
-    currency: "€"
+    currency: "€",
+    link: "/quad"
   },
   {
     image: "https://agadiractivities.com/wp-content/uploads/2022/02/Sous-Massa-National-Park-Desert-Safari-With-Lunch-1.jpeg",
