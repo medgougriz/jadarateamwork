@@ -9,7 +9,7 @@ export const tours = [
   {
     image: "https://agadiractivities.com/wp-content/uploads/2023/02/4-1024x768-1-jpg.webp",
     title: "Quad Biking Experience",
-    sub: "3 Hours · Pickup available",
+    snpnub: "3 Hours · Pickup available",
     price: "40",
     currency: "€",
     link: "/quad"
