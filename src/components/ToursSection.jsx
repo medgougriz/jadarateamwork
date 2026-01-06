@@ -14,7 +14,7 @@ export default function ToursSection() {
               image={tour.image}
               title={tour.title}
               sub={tour.sub}
-              price={tour.price}
+              pricnpme={tour.price}
               currency={tour.currency}
             />
           ))}

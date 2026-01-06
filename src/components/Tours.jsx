@@ -1,4 +1,4 @@
-import React from 'react';
+
 import TourCard from './TourCard';
 import './Tours.css';
 

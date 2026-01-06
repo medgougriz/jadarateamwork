@@ -18,7 +18,7 @@ export default function ToursDesertSection() {
               sub={tour.sub}
               price={tour.price}
               currency={tour.currency}
-              onBook={() => navigate(tour.link || '/quad')}
+              onBook={() => navigate(tour.link)}
             />
           ))}
         </div>

@@ -15,6 +15,12 @@
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
+/* make card a column so footer (button) can sit at the bottom */
+.tour-card {
+  display: flex;
+  flex-direction: column;
+}
+
 /* Desktop hover only */
 @media (hover: hover) {
   .tour-card:hover {
@@ -41,6 +47,9 @@
 
 .tour-body {
   padding: 14px 16px 18px;
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
 }
 
 .tour-title {
@@ -67,6 +76,7 @@
   align-items: center;
   justify-content: space-between;
   gap: 10px;
+  margin-top: auto;
 }
 
 /* ===============================
