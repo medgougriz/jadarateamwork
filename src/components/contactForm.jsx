@@ -1,5 +1,7 @@
-export default function Contact() {
+export default function ContactForm() {
     return (
+        <>
+        <br />
         <form className="flex flex-col items-center text-sm text-slate-800">
             <p className="text-xs bg-orange-200 text-indigo-600 font-medium px-3 py-1 rounded-full">Contact Us</p> 
            
@@ -33,5 +35,6 @@ export default function Contact() {
             </div>
             
         </form>
+        </>
     );
 };

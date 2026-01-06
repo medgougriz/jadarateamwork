@@ -1,12 +1,12 @@
 import Navbar from "../components/navbar.jsx";
 import Footer from "../components/footer.jsx";
-import Activity1 from "../components/Activity-one";
+import ContactForm from "../components/contactForm.jsx";
 
-export default function Quad() {
+export default function Contact() {
   return (
     <>
       <Navbar />
-      <Activity1 />
+      <ContactForm />
       <Footer />
     </>
   );
