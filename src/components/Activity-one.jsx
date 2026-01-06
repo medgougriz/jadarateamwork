@@ -1,23 +1,38 @@
+import React from "react";
+import Yo1 from "../assets/images/yo1.jpg";
+import Yo2 from "../assets/images/yo2.jpg";
+
+
 export default function Activity1() {
   return (
-    <div className="p-4 bg-white border border-gray-200 hover:-translate-y-1 transition duration-300 rounded-lg shadow shadow-black/10 max-w-80">
-      <img
-        className="rounded-md max-h-40 w-full object-cover"
-        src="https://images.unsplash.com/photo-1560264418-c4445382edbc?q=80&w=400"
-        alt="officeImage"
-      />
-      <p className="text-gray-900 text-xl font-semibold ml-2 mt-4">
-        Your Card Title
-      </p>
-      <p className="text-zinc-400 text-sm/6 mt-2 ml-2 mb-2">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore..
-      </p>
-      <button
-        type="button"
-        className="bg-indigo-600 hover:bg-indigo-700 transition cursor-pointer mt-4 mb-3 ml-2 px-6 py-2 font-medium rounded-md text-white text-sm"
-      >
-        Learn More
-      </button>
+    <div className="flex flex-wrap items-center justify-center gap-4">
+
+      {/* Card 1 */}
+      <div className="bg-white rounded-2xl pb-4 overflow-hidden border border-gray-200 hover:-translate-y-1 transition duration-300">
+        <img
+          className="w-64 h-52 object-cover object-top"
+          src={Yo1}
+          alt="Yoza"
+        />
+        <div className="flex flex-col items-center">
+          <p className="font-medium mt-3">Yoza</p>
+          <p className="text-gray-500 text-sm">yoza@gmail.com</p>
+        </div>
+      </div>
+
+      {/* Card 2 */}
+      <div className="bg-white rounded-2xl pb-4 overflow-hidden border border-gray-200 hover:-translate-y-1 transition duration-300">
+        <img
+          className="w-64 h-52 object-cover object-top"
+          src={Yo2}
+          alt="Youssef"
+        />
+        <div className="flex flex-col items-center">
+          <p className="font-medium mt-3">Youssef</p>
+          <p className="text-gray-500 text-sm">youssef@gmail.com</p>
+        </div>
+      </div>
+
     </div>
   );
 }
