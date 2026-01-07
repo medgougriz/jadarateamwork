@@ -1,4 +1,4 @@
-import React from 'react';
+
 import './TourCard.css';
 
 export default function TourCard({
@@ -11,8 +11,11 @@ export default function TourCard({
   className = ''
 }) {
   return (
-    <article className={`tour-card ${className}`.trim()}>
-      <div className="tour-image" style={{ backgroundImage: `url(${image})` }} />
+    <article className={`tour-card ${className}`}>
+      <div
+        className="tour-image"
+        style={{ backgroundImage: `url(${image})` }}
+      />
 
       <div className="tour-body">
         <h3 className="tour-title">{title}</h3>
@@ -26,7 +29,13 @@ export default function TourCard({
             <span className="per"> per person</span>
           </div>
 
-          <button className="book-btn" onClick={onBook} aria-label="Book Now">Book Now</button>
+          <button
+            className="book-btn"
+            onClick={onBook}
+            aria-label={`Book ${title}`}
+          >
+            Book Now
+          </button>
         </div>
       </div>
     </article>

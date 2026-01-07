@@ -1,12 +1,14 @@
+import { useNavigate } from 'react-router-dom';
 import TourCard from './TourCard';
-import { tours } from '../data/ToursData';
+import { tours } from '../data/ToursDataDesert';
 import './ToursSection.css';
 
-export default function ToursSection() {
+export default function ToursDesertSection() {
+  const navigate = useNavigate();
   return (
     <section className="tours-section">
       <div className="tours-inner">
-        <h2 className="tours-title">Popular Tours</h2>
+        <h2 className="tours-title">Desert Activities</h2>
         <div className="tours-grid">
           {tours.map((tour, i) => (
             <TourCard
@@ -14,8 +16,9 @@ export default function ToursSection() {
               image={tour.image}
               title={tour.title}
               sub={tour.sub}
-              pricnpme={tour.price}
+              price={tour.price}
               currency={tour.currency}
+              onBook={() => navigate(tour.link)}
             />
           ))}
         </div>

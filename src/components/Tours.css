@@ -1,0 +1,25 @@
+/* ===============================
+   Tour Grid Layout
+================================ */
+
+.tour-grid {
+  display: grid;
+  grid-template-columns: 1fr; /* ✅ ONE card per row on mobile */
+  gap: 20px;
+  padding: 16px;
+  justify-items: center;
+}
+
+/* Tablets */
+@media (min-width: 640px) {
+  .tour-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Desktops */
+@media (min-width: 1024px) {
+  .tour-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

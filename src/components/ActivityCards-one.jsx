@@ -1,12 +1,12 @@
 import TourCard from './TourCard';
-import { tours } from '../data/ToursData';
+import { tours } from '../data/ToursDataWater';
 import './ToursSection.css';
 
-export default function ToursSection() {
+export default function ToursWaterSection() {
   return (
     <section className="tours-section">
       <div className="tours-inner">
-        <h2 className="tours-title">Popular Tours</h2>
+        <h2 className="tours-title">Water Activities</h2>
         <div className="tours-grid">
           {tours.map((tour, i) => (
             <TourCard
@@ -14,7 +14,7 @@ export default function ToursSection() {
               image={tour.image}
               title={tour.title}
               sub={tour.sub}
-              pricnpme={tour.price}
+              price={tour.price}
               currency={tour.currency}
             />
           ))}
