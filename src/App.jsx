@@ -4,6 +4,7 @@ import Quad from "./pages/Quad";
 import { Routes, Route } from "react-router-dom";
 import Contact from "./pages/contact";
 import "./style.css";
+import Notfind from "./components/notfind";
 
 
 function App() {
@@ -11,6 +12,7 @@ function App() {
     <>
     <Routes>
       <Route path="/" element={<Home />} />
+      <Route path="*" element={<Notfind />} />
       <Route path="/quad" element={<Quad />} />
       <Route path="/contact" element={<Contact />} />
     </Routes>
