@@ -1,4 +1,3 @@
-import { useState } from "react";
 import Home from "./pages/Home";
 import Quad from "./pages/Quad";
 import { Routes, Route } from "react-router-dom";
